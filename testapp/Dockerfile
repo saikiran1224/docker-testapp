@@ -1,7 +1,7 @@
-FROM node 
+FROM node:22-trixie-slim
 
 ENV MONGO_DB_USERNAME=admin \ 
-    MONGODB_DB_PASSWORD=qwerty
+    MONGO_DB_PWD=qwerty
 
 RUN mkdir -p testapp 
 

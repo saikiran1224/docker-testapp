@@ -9,6 +9,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: qwerty
     networks:
       - mongo-network 
+    volumes:
+      - /Users/saikiran/Desktop/data:/data/db
 
   mongo-express:
     image: mongo-express
